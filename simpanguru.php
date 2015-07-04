@@ -11,7 +11,7 @@ $sql = "INSERT INTO guru (ID_GURU, NAMA, JENIS_KELAMIN, ALAMAT, TEMPAT_LAHIR, TA
 
 if (mysql_query($sql)) { //Simpan data $sql
     echo "Data Berhasil Disimpan"; //Berhasil
-    header('location:tampilguru.php');
+    header('location:tampilguru.php');	
 } else {
     echo "Data Gagal Disimpan"; //Gagal
 }

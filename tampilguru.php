@@ -13,6 +13,7 @@
 		<th>Alamat</th>
 		<th>Tempat Lahir</th>
 		<th>Tanggal Lahir</th>
+		<th>Action</th>
 	</tr>
 
 	<?php 
@@ -22,7 +23,6 @@
 	$hasil = mysql_query($query);
 
 	while ($row = mysql_fetch_array($hasil)) {  ?>
-
 	
 	<tr>
 		<td><?php echo $row["NAMA"]; ?></td>
@@ -30,6 +30,10 @@
 		<td><?php echo $row["ALAMAT"]; ?></td>
 		<td><?php echo $row["TEMPAT_LAHIR"]; ?></td>
 		<td><?php echo $row["TANGGAL_LAHIR"]; ?></td>
+		<td>
+			<a href="edit.php?id=<?php echo $row["ID_GURU"]; ?>">Edit</a> /
+			<a href="delete.php?id=<?php echo $row["ID_GURU"]; ?>">Hapus</a>
+		</td>
 	</tr>
 
 	<?php } ?>
