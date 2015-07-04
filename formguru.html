@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data Guru</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h1>Input Data Guru</h1>
+			<form action="simpanguru.php" method="post">
+				<div class="form-group">
+					<label>NIP</label>
+					<Input type="text" name="nip" class="form-control" placeholder="Nomor Induk" autofocus required>
+				</div>
+				<div class="form-group">
+					<label>Nama</label>
+					<Input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" required>
+				</div>
+				<div class="form-group">
+					<label>Jenis Kelamin</label>
+					<label class="radio-inline"><input type="radio" name="kelamin" value="Laki-laki">Laki-laki</label>
+<label class="radio-inline"><input type="radio" name="kelamin" value="Perempuan">Perempuan</label>
+				</div>
+				<div class="form-group">
+					<label>Alamat</label>
+					<textarea class="form-control" rows="3" name="alamat" required></textarea>
+				</div>
+				<div class="form-group">
+					<label>Tempat Lahir</label>
+					<Input type="text" name="tempatlahir" class="form-control" placeholder="Tempat Lahir" required>
+				</div>
+				<div class="form-group">
+					<label>Tanggal Lahir</label>
+					<Input type="date" name="tglahir" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<Input type="submit" value="Simpan" class="btn btn-primary">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

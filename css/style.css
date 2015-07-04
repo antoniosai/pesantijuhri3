@@ -1,0 +1,12 @@
+#kepala {
+		background-color: #00B3FF; /*Warna Background */
+		padding-top: 20px; /*Batas Atas*/
+		padding-bottom: 20px; /*Batas bawah*/
+		text-align: center;
+	}
+	h1 {
+		color: #2D6300;
+	}
+	.pribadi {
+		color: #FF0000;
+	}
